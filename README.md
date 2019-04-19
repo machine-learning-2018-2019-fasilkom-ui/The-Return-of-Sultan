@@ -4,7 +4,7 @@
 Nama Kelompok : The Return Of Sultan
 Title : [Komparasi Decision Tree dan Random Forest untuk Klasifikasi Kapal pada Citra Satelit di Wilayah Maritim](Documents/The%20Return%20of%20Sultan_proposal.pdf)
 
-Dataset dapat di download pada situs [Kaggle - Ship in Satellite Imagery](https://www.kaggle.com/rhammell/ships-in-satelliteimagery)
+Dataset dapat di download pada situs [Kaggle - Ship in Satellite Imagery](https://www.kaggle.com/rhammell/ships-in-satellite-imagery)
 
 # Progress 1
 Ekstraksi Fitur menggunakan Histogram of Oriented Gradient (HOG).
