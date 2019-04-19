@@ -9,6 +9,14 @@ Dataset dapat di download pada situs Kaggle - Ship in Satellite Imagery
 # Progress 1
 Ekstraksi Fitur menggunakan Histogram of Oriented Gradient (HOG)
 
+# Progress 2
+Proses Klasifikasi menggunakan Algoritma Decision Tree dan Random Forest. Untuk algoritma Decision Tree terbagi menjadi dua jenis yaitu versi tanpa library dan menggunakan library standar machine learning (Scikit). Untuk menjalankan kode dapat menjalankannya dengan 5 file kode python sebagai berikut: 
+1. [main_hog_dt_kfold.py](main_hog_dt_kfold.py) - Kode Klasifikasi Decision Tree dengan Stratified K-Fold Cross Validation
+2. [main_hog_dt_manual.py](main_hog_dt_manual.py) - Kode Klasifikasi Decision Tree (Implementasi Manual Tanpa Library)
+3. [main_hog_dt_non_fold.py](main_hog_dt_non_fold.py) - Kode Klasifikasi Decision Tree dengan Pembagian data latih 80% dan data uji 20%
+4. [main_hog_rf_kfold.py](main_hog_rf_kfold.py) - Kode Klasifikasi Random Forest dengan Stratified K-Fold Cross Validation
+5. [main_hog_rf_non_fold.py](main_hog_rf_non_fold.py) - Kode Klasifikasi Random Forest dengan Pembagian data latih 80% dan data uji 20%
+
 # Referensi
 [1] Kaggle, “Ships in Satellite Imagery,” 2018. [Online]. Available: https://www.kaggle.com/rhammell/ships-in-satelliteimagery.
 [2] B. P. S. INDONESIA, “STATISTIK SUMBER DAYA LAUT DAN PESISIR.” 2018.
