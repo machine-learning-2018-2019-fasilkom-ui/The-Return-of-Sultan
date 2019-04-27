@@ -11,8 +11,8 @@ Ekstraksi Fitur menggunakan Histogram of Oriented Gradient (HOG).
 
 |  | Kapal | Bukan Kapal |
 | --- | --- | --- |
-| Citra Satelit | ![Alt text](images/kapal1.jpg?raw=true "HOG Kapal") | ![Alt text](images/bukankapal1.jpg?raw=true "HOG Bukan Kapal") |
-| Fitur HOG | ![Alt text](images/kapal1-hog-or_8_cell_4-4.jpg?raw=true "HOG Kapal") | ![Alt text](images/bukankapal1-hog-or_8_cell_4-4.jpg?raw=true "HOG Bukan Kapal") |
+| Citra Satelit | ![Alt text](Images/kapal1.jpg?raw=true "HOG Kapal") | ![Alt text](Images/bukankapal1.jpg?raw=true "HOG Bukan Kapal") |
+| Fitur HOG | ![Alt text](Images/kapal1-hog-or_8_cell_4-4.jpg?raw=true "HOG Kapal") | ![Alt text](Images/bukankapal1-hog-or_8_cell_4-4.jpg?raw=true "HOG Bukan Kapal") |
 
 Untuk dokumen lengkap dapat dilihat pada dokumen [Progress 1](Documents/The%20Return%20of%20Sultan_progress1.pdf).
 
@@ -31,29 +31,29 @@ Untuk dokumen lengkap dapat dilihat pada dokumen [Progress 2](Documents/The%20Re
 
 | Rotate 15 | Rotate 30 | Rotate 45 | Rotate 60 | Rotate 75 | Rotate 90 | Rotate 105 |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| ![Alt text](images/20160710_182139_0c78-rotate15.png?raw=true "Rotate 15") | ![Alt text](images/20160710_182139_0c78-rotate30.png?raw=true "Rotate 30") | ![Alt text](images/20160710_182139_0c78-rotate45.png?raw=true "Rotate 45") | ![Alt text](images/20160710_182139_0c78-rotate60.png?raw=true "Rotate 60") | ![Alt text](images/20160710_182139_0c78-rotate75.png?raw=true "Rotate 75") | ![Alt text](images/20160710_182139_0c78-rotate90.png?raw=true "Rotate 90") | ![Alt text](images/20160710_182139_0c78-rotate105.png?raw=true "Rotate 105") |
+| ![Alt text](Images/20160710_182139_0c78-rotate15.png?raw=true "Rotate 15") | ![Alt text](Images/20160710_182139_0c78-rotate30.png?raw=true "Rotate 30") | ![Alt text](Images/20160710_182139_0c78-rotate45.png?raw=true "Rotate 45") | ![Alt text](Images/20160710_182139_0c78-rotate60.png?raw=true "Rotate 60") | ![Alt text](Images/20160710_182139_0c78-rotate75.png?raw=true "Rotate 75") | ![Alt text](Images/20160710_182139_0c78-rotate90.png?raw=true "Rotate 90") | ![Alt text](Images/20160710_182139_0c78-rotate105.png?raw=true "Rotate 105") |
 | Rotate 120 | Rotate 135 | Rotate 150 | Rotate 165 | Rotate 180 | Rotate 195 | Rotate 210 |
-| ![Alt text](images/20160710_182139_0c78-rotate120.png?raw=true "Rotate 120") | ![Alt text](images/20160710_182139_0c78-rotate135.png?raw=true "Rotate 135") | ![Alt text](images/20160710_182139_0c78-rotate150.png?raw=true "Rotate 150") | ![Alt text](images/20160710_182139_0c78-rotate165.png?raw=true "Rotate 165") | ![Alt text](images/20160710_182139_0c78-rotate180.png?raw=true "Rotate 180") | ![Alt text](images/20160710_182139_0c78-rotate195.png?raw=true "Rotate 195") | ![Alt text](images/20160710_182139_0c78-rotate210.png?raw=true "Rotate 210") |
+| ![Alt text](Images/20160710_182139_0c78-rotate120.png?raw=true "Rotate 120") | ![Alt text](Images/20160710_182139_0c78-rotate135.png?raw=true "Rotate 135") | ![Alt text](Images/20160710_182139_0c78-rotate150.png?raw=true "Rotate 150") | ![Alt text](Images/20160710_182139_0c78-rotate165.png?raw=true "Rotate 165") | ![Alt text](Images/20160710_182139_0c78-rotate180.png?raw=true "Rotate 180") | ![Alt text](Images/20160710_182139_0c78-rotate195.png?raw=true "Rotate 195") | ![Alt text](Images/20160710_182139_0c78-rotate210.png?raw=true "Rotate 210") |
 | Rotate 225 | Rotate 240 | Rotate 255 | Rotate 270 | Rotate 285 | Rotate 300 | Rotate 315 |
-| ![Alt text](images/20160710_182139_0c78-rotate225.png?raw=true "Rotate 225") | ![Alt text](images/20160710_182139_0c78-rotate240.png?raw=true "Rotate 240") | ![Alt text](images/20160710_182139_0c78-rotate255.png?raw=true "Rotate 255") | ![Alt text](images/20160710_182139_0c78-rotate270.png?raw=true "Rotate 270") | ![Alt text](images/20160710_182139_0c78-rotate285.png?raw=true "Rotate 285") | ![Alt text](images/20160710_182139_0c78-rotate300.png?raw=true "Rotate 300") | ![Alt text](images/20160710_182139_0c78-rotate315.png?raw=true "Rotate 315") |
+| ![Alt text](Images/20160710_182139_0c78-rotate225.png?raw=true "Rotate 225") | ![Alt text](Images/20160710_182139_0c78-rotate240.png?raw=true "Rotate 240") | ![Alt text](Images/20160710_182139_0c78-rotate255.png?raw=true "Rotate 255") | ![Alt text](Images/20160710_182139_0c78-rotate270.png?raw=true "Rotate 270") | ![Alt text](Images/20160710_182139_0c78-rotate285.png?raw=true "Rotate 285") | ![Alt text](Images/20160710_182139_0c78-rotate300.png?raw=true "Rotate 300") | ![Alt text](Images/20160710_182139_0c78-rotate315.png?raw=true "Rotate 315") |
 | Rotate 330 | Rotate 345 | Rotate 360 |
-| ![Alt text](images/20160710_182139_0c78-rotate330.png?raw=true "Rotate 330") | ![Alt text](images/20160710_182139_0c78-rotate345.png?raw=true "Rotate 345") | ![Alt text](images/20160710_182139_0c78-rotate360.png?raw=true "Rotate 360") |
+| ![Alt text](Images/20160710_182139_0c78-rotate330.png?raw=true "Rotate 330") | ![Alt text](Images/20160710_182139_0c78-rotate345.png?raw=true "Rotate 345") | ![Alt text](Images/20160710_182139_0c78-rotate360.png?raw=true "Rotate 360") |
 
 | Salt & Pepper Noise | Gaussian Noise |
 | :---: | :---: |
-| ![Alt text](images/20160710_182139_0c78-s&p%20noise.png?raw=true "Salt & Pepper Noise") | ![Alt text](images/20160710_182139_0c78-gaussian%20noise.png?raw=true "Gaussian Noise") |
+| ![Alt text](Images/20160710_182139_0c78-s&p%20noise.png?raw=true "Salt & Pepper Noise") | ![Alt text](Images/20160710_182139_0c78-gaussian%20noise.png?raw=true "Gaussian Noise") |
 
 | Horizontal Flip | Vertical Flip |
 | :---: | :---: |
-| ![Alt text](images/20160710_182139_0c78-HFlip.png?raw=true "Horizontal Flip") | ![Alt text](images/20160710_182139_0c78-VFlip.png?raw=true "Vertical Flip") |
+| ![Alt text](Images/20160710_182139_0c78-HFlip.png?raw=true "Horizontal Flip") | ![Alt text](Images/20160710_182139_0c78-VFlip.png?raw=true "Vertical Flip") |
 
 | Blurring (3x3) | Blurring (5x5) |
 | :---: | :---: |
-| ![Alt text](images/20160710_182139_0c78-VerySoft%20Blur.png?raw=true "Blurring (3x3)") | ![Alt text](images/20160710_182139_0c78-Soft%20blur.png?raw=true "Blurring (5x5)") |
+| ![Alt text](Images/20160710_182139_0c78-VerySoft%20Blur.png?raw=true "Blurring (3x3)") | ![Alt text](Images/20160710_182139_0c78-Soft%20blur.png?raw=true "Blurring (5x5)") |
 
 | Rescale (0.75) |
 | :---: |
-| ![Alt text](images/20160710_182139_0c78-Rescale_0.75.png?raw=true "Rescale (0.75)") | 
+| ![Alt text](Images/20160710_182139_0c78-Rescale_0.75.png?raw=true "Rescale (0.75)") | 
 
 # Referensi
 [1] Kaggle, “Ships in Satellite Imagery,” 2018. [Online]. Available: https://www.kaggle.com/rhammell/ships-in-satelliteimagery. <br/>
