@@ -19,6 +19,9 @@ Proses Klasifikasi menggunakan Algoritma Decision Tree dan Random Forest. Untuk 
 4. [main_hog_rf_kfold.py](main_hog_rf_kfold.py) - Kode Klasifikasi Random Forest dengan Stratified K-Fold Cross Validation
 5. [main_hog_rf_non_fold.py](main_hog_rf_non_fold.py) - Kode Klasifikasi Random Forest dengan Pembagian data latih 80% dan data uji 20%
 
+# Data Augmentation, Ensemble Method, and Final Report & Poster
+1. [main_augmentation.py](main_augmentation.py) - Kode untuk proses augmentasi citra kapal dan bukan kapal yang terdiri dari proses rotasi, horizontal flip, vertical flip, gaussian noise, salt & pepper noise, blurring, rescale
+
 Untuk dokumen lengkap dapat dilihat pada dokumen [Progress 2](Documents/The%20Return%20of%20Sultan_progress2.pdf).
 
 # Referensi
