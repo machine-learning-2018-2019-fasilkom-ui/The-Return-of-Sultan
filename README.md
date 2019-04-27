@@ -11,8 +11,8 @@ Ekstraksi Fitur menggunakan Histogram of Oriented Gradient (HOG).
 
 |  | Kapal | Bukan Kapal |
 | --- | --- | --- |
-| Citra Satelit | ![Alt text](Images/kapal1.jpg?raw=true "HOG Kapal") | ![Alt text](Images/bukankapal1.jpg?raw=true "HOG Bukan Kapal") |
-| Fitur HOG | ![Alt text](Images/kapal1-hog-or_8_cell_4-4.jpg?raw=true "HOG Kapal") | ![Alt text](Images/bukankapal1-hog-or_8_cell_4-4.jpg?raw=true "HOG Bukan Kapal") |
+| Citra Satelit | ![Alt text](Images/kapal1.JPG?raw=true "HOG Kapal") | ![Alt text](Images/bukankapal1.JPG?raw=true "HOG Bukan Kapal") |
+| Fitur HOG | ![Alt text](Images/kapal1-hog-or_8_cell_4-4.JPG?raw=true "HOG Kapal") | ![Alt text](Images/bukankapal1-hog-or_8_cell_4-4.JPG?raw=true "HOG Bukan Kapal") |
 
 Untuk dokumen lengkap dapat dilihat pada dokumen [Progress 1](Documents/The%20Return%20of%20Sultan_progress1.pdf).
 
