@@ -26,7 +26,7 @@ Proses Klasifikasi menggunakan Algoritma Decision Tree dan Random Forest. Untuk 
 
 Untuk dokumen lengkap dapat dilihat pada dokumen [Progress 2](Documents/The%20Return%20of%20Sultan_progress2.pdf).
 
-# Data Augmentation, Ensemble Method, and Final Report & Poster
+# Data Augmentation and Ensemble Method
 1. [main_augmentation.py](main_augmentation.py) - Kode untuk proses augmentasi citra kapal dan bukan kapal yang terdiri dari proses horizontal flip, vertical flip, gaussian noise, salt & pepper noise, blurring
 2. [main_hog_dt_5_fold_aug.py](main_hog_dt_5_fold_aug.py) - Kode klasifikasi Decision Tree menggunakan data augmentasi dan stratified k-fold cross validation = 5
 3. [main_hog_dt_10_fold_aug.py](main_hog_dt_10_fold_aug.py) - Kode klasifikasi Decision Tree menggunakan data augmentasi dan stratified k-fold cross validation = 10
@@ -62,6 +62,16 @@ Untuk dokumen lengkap dapat dilihat pada dokumen [Progress 2](Documents/The%20Re
 | :---: | :---: |
 | ![Alt text](Images/20160710_182139_0c78-VerySoft%20Blur.png?raw=true "Blurring (3x3)") | ![Alt text](Images/20160710_182139_0c78-Soft%20blur.png?raw=true "Blurring (5x5)") |
 
+| Hasil deteksi dengan decision tree menggunakan gradient boosting pada citra pelabuhan makassar | Hasil deteksi dengan random forest menggunakan
+data augmentasi pada citra pelabuhan makassar |
+| :---: | :---: |
+| ![Alt text](Images/Hasil%20Eksperimen/dt_xgboost/makasar_1_xgboost.PNG?raw=true "DT Gradient Boosting (Makassar)") | ![Alt text](Images/Hasil%20Eksperimen/rf_aug_10fold/makasar_1_rf_10_fold_aug.png?raw=true "RF dengan data augmentasi 10-fold (Makassar)") |
+
+# Final Report
+Untuk dokumen lengkap dapat dilihat pada dokumen [Final Report](Documents/The%20Return%20of%20Sultan_final%20report.pdf). <br/>
+
+# Poster
+![Alt text](Images/Banner%20Proyek%20ML-1.png?raw=true "Poster - The Return of Sultan") <br/>
 
 # Referensi
 [1] Kaggle, “Ships in Satellite Imagery,” 2018. [Online]. Available: https://www.kaggle.com/rhammell/ships-in-satelliteimagery. <br/>
