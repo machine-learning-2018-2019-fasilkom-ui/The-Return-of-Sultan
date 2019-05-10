@@ -68,7 +68,7 @@ data augmentasi pada citra pelabuhan makassar |
 | ![Alt text](Images/Hasil%20Eksperimen/dt_xgboost/makasar_1_xgboost.PNG?raw=true "DT Gradient Boosting (Makassar)") | ![Alt text](Images/Hasil%20Eksperimen/rf_aug_10fold/makasar_1_rf_10_fold_aug.png?raw=true "RF dengan data augmentasi 10-fold (Makassar)") |
 
 # Final Report
-Untuk dokumen lengkap dapat dilihat pada dokumen [Final Report](Documents/The%20Return%20of%20Sultan_final%20report.pdf). <br/>
+Untuk dokumen lengkap dapat dilihat pada dokumen [Final Report](Documents/The%20Return%20of%20Sultan_finalreport.pdf). <br/>
 
 # Poster
 ![Alt text](Images/Banner%20Proyek%20ML-1.png?raw=true "Poster - The Return of Sultan") <br/>
