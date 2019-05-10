@@ -28,7 +28,27 @@ Untuk dokumen lengkap dapat dilihat pada dokumen [Progress 2](Documents/The%20Re
 
 # Data Augmentation, Ensemble Method, and Final Report & Poster
 1. [main_augmentation.py](main_augmentation.py) - Kode untuk proses augmentasi citra kapal dan bukan kapal yang terdiri dari proses horizontal flip, vertical flip, gaussian noise, salt & pepper noise, blurring
-
+2. [main_hog_dt_5_fold_aug.py](main_hog_dt_5_fold_aug.py) - Kode klasifikasi Decision Tree menggunakan data augmentasi dan stratified k-fold cross validation = 5
+3. [main_hog_dt_10_fold_aug.py](main_hog_dt_10_fold_aug.py) - Kode klasifikasi Decision Tree menggunakan data augmentasi dan stratified k-fold cross validation = 10
+4. [main_hog_dt_5_fold.py](main_hog_dt_5_fold.py) - Kode klasifikasi Decision Tree dengan stratified k-fold cross validation = 5
+5. [main_hog_dt_10_fold.py](main_hog_dt_10_fold.py) - Kode klasifikasi Decision Tree dengan stratified k-fold cross validation = 10
+6. [main_hog_dt_aug.py](main_hog_dt_aug.py) - Kode klasifikasi Decision Tree dengan data augmentasi
+7. [main_hog_dt_tuning_grid_aug.py](main_hog_dt_tuning_grid_aug.py) - Kode klasifikasi Decision Tree dengan menggunakan tuning = grid search dan data augmentasi
+8. [main_hog_dt_tuning_grid.py](main_hog_dt_tuning_grid.py) - Kode klasifikasi Decision Tree dengan menggunakan tuning = grid search
+9. [main_hog_dt_tuning_random_aug.py](main_hog_dt_tuning_random_aug.py) - Kode klasifikasi Decision Tree dengan menggunakan tuning = random dan data augmentasi
+10. [main_hog_dt_tuning_random.py](main_hog_dt_random_grid.py) - Kode klasifikasi Decision Tree dengan menggunakan tuning = random
+11. [main_hog_rf_5_fold_aug.py](main_hog_rf_5_fold_aug.py) - Kode klasifikasi Random Forest dengan menggunakan data augmentasi dan stratified k-fold cross validation = 5
+12. [main_hog_rf_5_fold.py](main_hog_rf_5_fold.py) - Kode klasifikasi Random Forest dengan stratified k-fold cross validation = 5
+13. [main_hog_rf_10_fold_aug.py](main_hog_rf_10_fold_aug.py) - Kode klasifikasi Random Forest dengan menggunakan data augmentasi dan stratified k-fold cross validation = 10
+14. [main_hog_rf_10_fold.py](main_hog_rf_10_fold.py) - Kode klasifikasi Random Forest dengan stratified k-fold cross validation = 10
+15. [main_hog_rf_aug.py](main_hog_rf_aug.py) - Kode klasifikasi Random Forest dengan data augmentasi
+16. [main_hog_rf.py](main_hog_rf.py) - Kode klasifikasi Random Forest
+17. [main_xgboost_dt_5_fold_aug.py](main_xgboost_dt_5_fold_aug.py) - Kode klasifikasi Decision tree menggunakan gradient boosting dan data augmentasi serta stratified k-fold cross validation = 5
+18. [main_xgboost_dt_5_fold.py](main_xgboost_dt_5_fold.py) - Kode klasifikasi Decision tree menggunakan gradient boosting dan stratified k-fold cross validation = 5
+19. [main_xgboost_dt_10_fold_aug.py](main_xgboost_dt_10_fold_aug.py) - Kode klasifikasi Decision tree menggunakan gradient boosting dan data augmentasi serta stratified k-fold cross validation = 10
+20. [main_xgboost_dt_10_fold.py](main_xgboost_dt_10_fold.py) - Kode klasifikasi Decision tree menggunakan gradient boosting dan stratified k-fold cross validation = 10
+21. [main_xgboost_dt_aug.py](main_xgboost_dt_aug.py) - Kode klasifikasi Decision tree menggunakan gradient boosting dan data augmentasi
+22. [main_xgboost_dt.py](main_xgboost_dt.py) - Kode klasifikasi Decision tree menggunakan gradient boosting
 
 | Salt & Pepper Noise | Gaussian Noise |
 | :---: | :---: |
