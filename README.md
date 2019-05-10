@@ -62,10 +62,13 @@ Untuk dokumen lengkap dapat dilihat pada dokumen [Progress 2](Documents/The%20Re
 | :---: | :---: |
 | ![Alt text](Images/20160710_182139_0c78-VerySoft%20Blur.png?raw=true "Blurring (3x3)") | ![Alt text](Images/20160710_182139_0c78-Soft%20blur.png?raw=true "Blurring (5x5)") |
 
-| Hasil deteksi dengan decision tree menggunakan gradient boosting pada citra pelabuhan makassar | Hasil deteksi dengan random forest menggunakan
-data augmentasi pada citra pelabuhan makassar |
-| :---: | :---: |
-| ![Alt text](Images/Hasil%20Eksperimen/dt_xgboost/makasar_1_xgboost.PNG?raw=true "DT Gradient Boosting (Makassar)") | ![Alt text](Images/Hasil%20Eksperimen/rf_aug_10fold/makasar_1_rf_10_fold_aug.png?raw=true "RF dengan data augmentasi 10-fold (Makassar)") |
+| Hasil deteksi dengan decision tree menggunakan gradient boosting pada citra pelabuhan makassar |
+| :---: |
+| ![Alt text](Hasil%20Eksperimen/dt_xgboost/makasar_1_xgboost.PNG?raw=true "DT Gradient Boosting (Makassar)") |
+
+|  Hasil deteksi dengan random forest menggunakan data augmentasi pada citra pelabuhan makassar |
+| :---: |
+| ![Alt text](Hasil%20Eksperimen/rf_aug_10fold/makasar_1_rf_10_fold_aug.JPG?raw=true "RF dengan data augmentasi 10-fold (Makassar)") |
 
 # Final Report
 Untuk dokumen lengkap dapat dilihat pada dokumen [Final Report](Documents/The%20Return%20of%20Sultan_finalreport.pdf). <br/>
