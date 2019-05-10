@@ -27,17 +27,8 @@ Proses Klasifikasi menggunakan Algoritma Decision Tree dan Random Forest. Untuk 
 Untuk dokumen lengkap dapat dilihat pada dokumen [Progress 2](Documents/The%20Return%20of%20Sultan_progress2.pdf).
 
 # Data Augmentation, Ensemble Method, and Final Report & Poster
-1. [main_augmentation.py](main_augmentation.py) - Kode untuk proses augmentasi citra kapal dan bukan kapal yang terdiri dari proses rotasi, horizontal flip, vertical flip, gaussian noise, salt & pepper noise, blurring, rescale
+1. [main_augmentation.py](main_augmentation.py) - Kode untuk proses augmentasi citra kapal dan bukan kapal yang terdiri dari proses horizontal flip, vertical flip, gaussian noise, salt & pepper noise, blurring
 
-| Rotate 15 | Rotate 30 | Rotate 45 | Rotate 60 | Rotate 75 | Rotate 90 | Rotate 105 |
-| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| ![Alt text](Images/20160710_182139_0c78-rotate15.png?raw=true "Rotate 15") | ![Alt text](Images/20160710_182139_0c78-rotate30.png?raw=true "Rotate 30") | ![Alt text](Images/20160710_182139_0c78-rotate45.png?raw=true "Rotate 45") | ![Alt text](Images/20160710_182139_0c78-rotate60.png?raw=true "Rotate 60") | ![Alt text](Images/20160710_182139_0c78-rotate75.png?raw=true "Rotate 75") | ![Alt text](Images/20160710_182139_0c78-rotate90.png?raw=true "Rotate 90") | ![Alt text](Images/20160710_182139_0c78-rotate105.png?raw=true "Rotate 105") |
-| Rotate 120 | Rotate 135 | Rotate 150 | Rotate 165 | Rotate 180 | Rotate 195 | Rotate 210 |
-| ![Alt text](Images/20160710_182139_0c78-rotate120.png?raw=true "Rotate 120") | ![Alt text](Images/20160710_182139_0c78-rotate135.png?raw=true "Rotate 135") | ![Alt text](Images/20160710_182139_0c78-rotate150.png?raw=true "Rotate 150") | ![Alt text](Images/20160710_182139_0c78-rotate165.png?raw=true "Rotate 165") | ![Alt text](Images/20160710_182139_0c78-rotate180.png?raw=true "Rotate 180") | ![Alt text](Images/20160710_182139_0c78-rotate195.png?raw=true "Rotate 195") | ![Alt text](Images/20160710_182139_0c78-rotate210.png?raw=true "Rotate 210") |
-| Rotate 225 | Rotate 240 | Rotate 255 | Rotate 270 | Rotate 285 | Rotate 300 | Rotate 315 |
-| ![Alt text](Images/20160710_182139_0c78-rotate225.png?raw=true "Rotate 225") | ![Alt text](Images/20160710_182139_0c78-rotate240.png?raw=true "Rotate 240") | ![Alt text](Images/20160710_182139_0c78-rotate255.png?raw=true "Rotate 255") | ![Alt text](Images/20160710_182139_0c78-rotate270.png?raw=true "Rotate 270") | ![Alt text](Images/20160710_182139_0c78-rotate285.png?raw=true "Rotate 285") | ![Alt text](Images/20160710_182139_0c78-rotate300.png?raw=true "Rotate 300") | ![Alt text](Images/20160710_182139_0c78-rotate315.png?raw=true "Rotate 315") |
-| Rotate 330 | Rotate 345 | Rotate 360 |
-| ![Alt text](Images/20160710_182139_0c78-rotate330.png?raw=true "Rotate 330") | ![Alt text](Images/20160710_182139_0c78-rotate345.png?raw=true "Rotate 345") | ![Alt text](Images/20160710_182139_0c78-rotate360.png?raw=true "Rotate 360") |
 
 | Salt & Pepper Noise | Gaussian Noise |
 | :---: | :---: |
@@ -51,9 +42,6 @@ Untuk dokumen lengkap dapat dilihat pada dokumen [Progress 2](Documents/The%20Re
 | :---: | :---: |
 | ![Alt text](Images/20160710_182139_0c78-VerySoft%20Blur.png?raw=true "Blurring (3x3)") | ![Alt text](Images/20160710_182139_0c78-Soft%20blur.png?raw=true "Blurring (5x5)") |
 
-| Rescale (0.75) |
-| :---: |
-| ![Alt text](Images/20160710_182139_0c78-Rescale_0.75.png?raw=true "Rescale (0.75)") | 
 
 # Referensi
 [1] Kaggle, “Ships in Satellite Imagery,” 2018. [Online]. Available: https://www.kaggle.com/rhammell/ships-in-satelliteimagery. <br/>
