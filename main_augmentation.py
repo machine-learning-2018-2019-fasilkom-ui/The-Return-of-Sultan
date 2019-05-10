@@ -80,6 +80,8 @@ except:
     img_neg_idx = img_neg_idx[:]
 
 
+print(len(img_neg_idx))
+print(len(img_pos_idx))
 img_pos = data[img_pos_idx]
 img_neg = data[img_neg_idx]
 
@@ -100,45 +102,55 @@ if not os.path.exists(path_aug+'1/'):
 
 rotate_list = [i*15 for i in range(1, 25)]
 print(rotate_list)
+# for i_image in img_neg_idx:
+#     for i_rot in range(len(rotate_list)):
+#         image_aug = rotate(data[i_image], rotate_list[i_rot])
+#         image_aug = img_as_uint(image_aug)
+#         io.imsave(path_aug+'0/'+dataset["scene_ids"][i_image]+'- rotate' +
+#                   str(rotate_list[i_rot])+'.png', image_aug)
+# print("Finish augmented image(Non ship) - rotate")
+# for i_image in img_pos_idx:
+#     for i_rot in range(len(rotate_list)):
+#         image_aug = rotate(data[i_image], rotate_list[i_rot])
+#         image_aug = img_as_uint(image_aug)
+#         io.imsave(path_aug+'1/'+dataset["scene_ids"][i_image]+'- rotate' +
+#                   str(rotate_list[i_rot])+'.png', image_aug)
+# print("Finish augmented image(ship) - rotate")
+
 for i_image in img_neg_idx:
-    for i_rot in range(len(rotate_list)):
-        image_aug = rotate(data[i_image], rotate_list[i_rot])
-        image_aug = img_as_uint(image_aug)
-        io.imsave(path_aug+'0/'+dataset["scene_ids"][i_image]+'- rotate' +
-                  str(rotate_list[i_rot])+'.png', image_aug)
-print("Finish augmented image(Non ship) - rotate")
+    # original
+    image_aug = data[i_image]
+    image_aug = img_as_uint(image_aug)
+    io.imsave(path_aug+'0/'+dataset["scene_ids"][i_image]+'-'+str(dataset["locations"][i_image])+'- original' + '.png', image_aug)
+print("Finish augmented image(Non ship) - original")
+
 for i_image in img_pos_idx:
-    for i_rot in range(len(rotate_list)):
-        image_aug = rotate(data[i_image], rotate_list[i_rot])
-        image_aug = img_as_uint(image_aug)
-        io.imsave(path_aug+'1/'+dataset["scene_ids"][i_image]+'- rotate' +
-                  str(rotate_list[i_rot])+'.png', image_aug)
-print("Finish augmented image(ship) - rotate")
+    # HFlip
+    image_aug = data[i_image]
+    image_aug = img_as_uint(image_aug)
+    io.imsave(path_aug+'1/'+dataset["scene_ids"][i_image]+'-'+str(dataset["locations"][i_image])+'- original' + '.png', image_aug)
+print("Finish augmented image(ship) - original")
 
 for i_image in img_neg_idx:
     # HFlip
     image_aug = data[i_image][:, ::-1]
     image_aug = img_as_uint(image_aug)
-    io.imsave(path_aug+'0/'+dataset["scene_ids"]
-              [i_image]+'- HFlip' + '.png', image_aug)
+    io.imsave(path_aug+'0/'+dataset["scene_ids"][i_image]+'-'+str(dataset["locations"][i_image])+'- HFlip' + '.png', image_aug)
     # VFlip
     image_aug = data[i_image][::-1, :]
     image_aug = img_as_uint(image_aug)
-    io.imsave(path_aug+'0/'+dataset["scene_ids"]
-              [i_image]+'- VFlip' + '.png', image_aug)
+    io.imsave(path_aug+'0/'+dataset["scene_ids"][i_image]+'-'+str(dataset["locations"][i_image])+'- VFlip' + '.png', image_aug)
 print("Finish augmented image(Non ship) - HFlip and VFlip")
 
 for i_image in img_pos_idx:
     # HFlip
     image_aug = data[i_image][:, ::-1]
     image_aug = img_as_uint(image_aug)
-    io.imsave(path_aug+'1/'+dataset["scene_ids"]
-              [i_image]+'- HFlip' + '.png', image_aug)
+    io.imsave(path_aug+'1/'+dataset["scene_ids"][i_image]+'-'+str(dataset["locations"][i_image])+'- HFlip' + '.png', image_aug)
     # VFlip
     image_aug = data[i_image][::-1, :]
     image_aug = img_as_uint(image_aug)
-    io.imsave(path_aug+'1/'+dataset["scene_ids"]
-              [i_image]+'- VFlip' + '.png', image_aug)
+    io.imsave(path_aug+'1/'+dataset["scene_ids"][i_image]+"-"+str(dataset["locations"][i_image])+'- VFlip' + '.png', image_aug)
 print("Finish augmented image(ship) - HFlip and VFlip")
 
 for i_image in img_neg_idx:
@@ -146,13 +158,11 @@ for i_image in img_neg_idx:
     image_aug = random_noise(
         data[i_image], mode='gaussian', seed=None, clip=True)
     image_aug = img_as_uint(image_aug)
-    io.imsave(path_aug+'0/'+dataset["scene_ids"]
-              [i_image]+'- gaussian noise' + '.png', image_aug)
+    io.imsave(path_aug+'0/'+dataset["scene_ids"][i_image]+"-"+str(dataset["locations"][i_image])+'- gaussian noise' + '.png', image_aug)
     # Salt & Pepper Noise
     image_aug = random_noise(data[i_image], mode='s&p', seed=None, clip=True)
     image_aug = img_as_uint(image_aug)
-    io.imsave(path_aug+'0/'+dataset["scene_ids"]
-              [i_image]+'- s&p noise' + '.png', image_aug)
+    io.imsave(path_aug+'0/'+dataset["scene_ids"][i_image]+"-"+str(dataset["locations"][i_image])+"-"+'- s&p noise' + '.png', image_aug)
 print("Finish augmented image(Non ship) - Noise")
 
 for i_image in img_pos_idx:
@@ -160,60 +170,54 @@ for i_image in img_pos_idx:
     image_aug = random_noise(
         data[i_image], mode='gaussian', seed=None, clip=True)
     image_aug = img_as_uint(image_aug)
-    io.imsave(path_aug+'1/'+dataset["scene_ids"]
-              [i_image]+'- gaussian noise' + '.png', image_aug)
+    io.imsave(path_aug+'1/'+dataset["scene_ids"][i_image]+"-"+str(dataset["locations"][i_image])+'- gaussian noise' + '.png', image_aug)
     # Salt & Pepper Noise
     image_aug = random_noise(data[i_image], mode='s&p', seed=None, clip=True)
     image_aug = img_as_uint(image_aug)
-    io.imsave(path_aug+'1/'+dataset["scene_ids"]
-              [i_image]+'- s&p noise' + '.png', image_aug)
+    io.imsave(path_aug+'1/'+dataset["scene_ids"][i_image]+"-"+str(dataset["locations"][i_image])+'- s&p noise' + '.png', image_aug)
 print("Finish augmented image(ship) - Noise")
 
 for i_image in img_neg_idx:
     # Very Soft Blur
     image_aug = ndimage.uniform_filter(data[i_image], size=(3, 3, 1))
     image_aug = img_as_uint(image_aug)
-    io.imsave(path_aug+'0/'+dataset["scene_ids"]
-              [i_image]+'- VerySoft Blur' + '.png', image_aug)
+    io.imsave(path_aug+'0/'+dataset["scene_ids"][i_image]+"-"+str(dataset["locations"][i_image])+'- VerySoft Blur' + '.png', image_aug)
     # Soft Blur
     image_aug = ndimage.uniform_filter(data[i_image], size=(5, 5, 1))
     image_aug = img_as_uint(image_aug)
-    io.imsave(path_aug+'0/'+dataset["scene_ids"]
-              [i_image]+'- Soft blur' + '.png', image_aug)
+    io.imsave(path_aug+'0/'+dataset["scene_ids"][i_image]+"-"+str(dataset["locations"][i_image])+'- Soft blur' + '.png', image_aug)
 print("Finish augmented image(Non ship) - Blur")
 
 for i_image in img_pos_idx:
     # Very Soft Blur
     image_aug = ndimage.uniform_filter(data[i_image], size=(3, 3, 1))
     image_aug = img_as_uint(image_aug)
-    io.imsave(path_aug+'1/'+dataset["scene_ids"]
-              [i_image]+'- VerySoft Blur' + '.png', image_aug)
+    io.imsave(path_aug+'1/'+dataset["scene_ids"][i_image]+"-"+str(dataset["locations"][i_image])+'- VerySoft Blur' + '.png', image_aug)
     # Soft Blur
     image_aug = ndimage.uniform_filter(data[i_image], size=(5, 5, 1))
     image_aug = img_as_uint(image_aug)
-    io.imsave(path_aug+'1/'+dataset["scene_ids"]
-              [i_image]+'- Soft blur' + '.png', image_aug)
+    io.imsave(path_aug+'1/'+dataset["scene_ids"][i_image]+"-"+str(dataset["locations"][i_image])+'- Soft blur' + '.png', image_aug)
 print("Finish augmented image(ship) - Blur")
 
-for i_image in img_neg_idx:
-    # Rescale 0.75
-    im_rescaled = rescale(data[i_image], 0.75, anti_aliasing=True)
-    im_pad = np.stack([np.pad(im_rescaled[:, :, c], (10,), mode='constant',
-                              ) for c in range(3)], axis=2)
-    image_aug = img_as_uint(im_pad)
-    io.imsave(path_aug+'0/'+dataset["scene_ids"]
-              [i_image]+'- Rescale_0.75' + '.png', image_aug)
-print("Finish augmented image(Non ship) - Rescale")
+# for i_image in img_neg_idx:
+#     # Rescale 0.75
+#     im_rescaled = rescale(data[i_image], 0.75, anti_aliasing=True)
+#     im_pad = np.stack([np.pad(im_rescaled[:, :, c], (10,), mode='constant',
+#                               ) for c in range(3)], axis=2)
+#     image_aug = img_as_uint(im_pad)
+#     io.imsave(path_aug+'0/'+dataset["scene_ids"]
+#               [i_image]+'- Rescale_0.75' + '.png', image_aug)
+# print("Finish augmented image(Non ship) - Rescale")
 
-for i_image in img_pos_idx:
-    # Rescale 0.75
-    im_rescaled = rescale(data[i_image], 0.75, anti_aliasing=True)
-    im_pad = np.stack([np.pad(im_rescaled[:, :, c], (10,), mode='constant',
-                              ) for c in range(3)], axis=2)
-    image_aug = img_as_uint(im_pad)
-    io.imsave(path_aug+'1/'+dataset["scene_ids"]
-              [i_image]+'- Rescale_0.75' + '.png', image_aug)
-print("Finish augmented image(ship) - Rescale")
+# for i_image in img_pos_idx:
+#     # Rescale 0.75
+#     im_rescaled = rescale(data[i_image], 0.75, anti_aliasing=True)
+#     im_pad = np.stack([np.pad(im_rescaled[:, :, c], (10,), mode='constant',
+#                               ) for c in range(3)], axis=2)
+#     image_aug = img_as_uint(im_pad)
+#     io.imsave(path_aug+'1/'+dataset["scene_ids"]
+#               [i_image]+'- Rescale_0.75' + '.png', image_aug)
+# print("Finish augmented image(ship) - Rescale")
 
 # fig = plt.figure()
 # ax1 = fig.add_subplot(2, 2, 1)
