@@ -73,8 +73,8 @@ Untuk dokumen lengkap dapat dilihat pada dokumen [Progress 2](Documents/The%20Re
 # Final Report
 Untuk dokumen lengkap dapat dilihat pada dokumen [Final Report](Documents/The%20Return%20of%20Sultan_finalreport.pdf). <br/>
 
-# Poster
-![Alt text](Images/Banner2%20Proyek%20ML-%20The%20Return%20of%20Sultan.png?raw=true "Poster - The Return of Sultan") <br/>
+# Banner
+![Alt text](Images/Banner3%20Proyek%20ML-%20The%20Return%20of%20Sultan.png?raw=true "Banner - The Return of Sultan") <br/>
 
 # Referensi
 [1] Kaggle, “Ships in Satellite Imagery,” 2018. [Online]. Available: https://www.kaggle.com/rhammell/ships-in-satelliteimagery. <br/>
